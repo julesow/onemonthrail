@@ -1,139 +1,26 @@
-<style type="text/css">
-	@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
-
-*{
-  -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;    
-}
-
-body{
-  background:#272c32;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size:15px;
-  padding-top: 20px;;
-}
-nav a {
-	color:#1e6cca;
-  display:block;
-  text-align:center;
-  font-size:2em;
-  margin:0;
-  margin-bottom:25px;
-  color: #f1eced:;
-
-}
-
-h1{
-  color:#1e6cca;
-  display:block;
-  text-align:center;
-  font-size:2em;
-  margin:0;
-  margin-bottom:25px;
-  
-}
-
-form{
-  width:400px;
-  padding:20px;
-  margin:auto;
-  background:#fff;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-fieldset{
-  border:0;
-  margin:0;
-  padding:0;
-  position:relative;
-}
-
-input[type="text"], input[type="password"]{
-  border: 1px solid #dadada;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  width:100%;
-  padding: 10px;
-  color:#272c32;
-  margin-bottom:5px;
-}
-
-input[type="text"]:focus, input[type="password"]:focus{
-  border:1px solid #4cb182;
-  outline:0;
-}
-
-input[type="submit"]{
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background:#4cb182;
-  border:0;
-  padding: 16px 0;
-  color:#fff;
-  font-weight:800;
-  width:100%;
-  font-size:1.1em
-}
-
-input[type="submit"]:hover{
-  background:#408F6A;
-}
-
-input[type="text"]:after{
-  content:'ddd';
-  background:#ccc;
-  height:40px;
-  width:40px;
-}
-
-.ph{
-   -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  position:absolute;
-  right: 6px;
-  top: 9px;
-  padding: 2px 5px;
-  background:#4cb182;
-  color:#fff;
-  display:none;
-}
-</style>
-<script type="text/javascript">
-	$('input').focus(function(){
-  if($(this).attr('placeholder')&& $(this).val()!=""){
-    $('.ph').fadeOut();
-    $(this).after('<div class="ph">'+$(this).attr('placeholder')+'</div>');
-    $(this).parent().find('.ph').fadeIn();
-  }
-});
-$('input').keyup(function(){
-  console.log($(this).val());
-  if($(this).attr('placeholder')&&$(this).val!=""){
-    $(this).after('<div class="ph">'+$(this).attr('placeholder')+'</div>');
-    $(this).parent().find('.ph').fadeIn();
-  }
-});
-$('input').blur(function(){
-     $('.ph').fadeOut();
-});
-
-
-</script>
-<!-- form start here -->
-<h1>Welcome to my website!</h1>
-
-<form>
-  <h1>SIGN UP HERE</h2>
-  <fieldset><input type="text" name="firstname" placeholder="First Name"/></fieldset>
-  <fieldset><input type="text" name="lastname" placeholder="Last Name"/></fieldset>
-  <fieldset><input type="text" name="username" placeholder="Username"/></fieldset>
-  <fieldset><input type="password" name="password" placeholder="Password"/></fieldset>
-  <fieldset><input type="submit" value="SIGN UP FREE"/></fieldset>
-</form>
-  
+<div class="jumbotron jumbotron-home">
+    <div class="container">
+        <h1>Welcome to my website!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <%= link_to "Learn more »", "#", class: "btn btn-primary btn-lg" %> 
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><%= link_to "View details", "#", class: "btn btn-secondary" %></p>
+        </div>
+    </div>
+</div>
