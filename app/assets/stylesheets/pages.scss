@@ -3,8 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron-home {
-    background-image: url(image_path('home-bg.jpg'));
+    background-image: url(image_path('carriage-clock-797833_1920.jpg'));
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    p:pull-right;
 }
+/*
+ *= require rails_bootstrap_forms
+*/
