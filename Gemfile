@@ -8,7 +8,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
@@ -18,7 +18,7 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'bootstrap_form'
-gem 'devise', '>= 4.4.2'
+gem 'devise', '>= 4.2.0'
 gem 'activeadmin', '~> 1.0.0.0'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
