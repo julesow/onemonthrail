@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'bootstrap_form'
 gem 'devise', '>= 4.4.2'
-gem 'activeadmin', '~> 1.0.0.0'
+gem 'activeadmin', '~> 1.3.1.0'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
 
