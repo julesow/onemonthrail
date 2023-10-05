@@ -8,13 +8,13 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+gem 'rails', '~> 7.1.0'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.6'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -23,8 +23,8 @@ gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.2.2'
-gem 'jquery-ui-rails', '~> 5.0.5'
+gem 'jquery-rails', '>= 4.3.0'
+gem 'jquery-ui-rails', '~> 6.0.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -38,8 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'bootstrap_form'
-gem 'devise', '>= 4.4.2'
-gem 'activeadmin', '~> 1.0.0.0'
+gem 'devise', '>= 4.7.0'
+gem 'activeadmin', '~> 1.3.1.0'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
 
@@ -51,11 +51,11 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.4.0'
+  gem 'web-console', '>= 3.5.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.1.0'
 end
 
 group :production do
